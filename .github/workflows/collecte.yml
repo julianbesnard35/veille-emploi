@@ -1,0 +1,77 @@
+name: Collecte quotidienne des offres
+
+on:
+  schedule:
+    # 05:13 UTC = 6h13 a Paris (hiver) / 7h13 (ete). Marge pour les retards de GitHub.
+    - cron: "13 5 * * *"
+  workflow_dispatch:
+    inputs:
+      sources:
+        description: "Sources (all, ou liste : hellowork,apec,guichetemplois,vie_via,linkedin)"
+        default: "all"
+      enregistrer:
+        description: "Enregistrer le resultat dans data/ (oui/non)"
+        default: "oui"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collecte
+  cancel-in-progress: false
+
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - profil: profil_a
+            args: "--vie"
+          - profil: profil_b
+            args: ""
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests beautifulsoup4 lxml playwright && python -m playwright install --with-deps chromium
+      - env:
+          SOURCES: ${{ github.event.inputs.sources || 'all' }}
+        run: python collect.py ${{ matrix.profil }} ${{ matrix.args }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: out-${{ matrix.profil }}
+          path: out/
+          retention-days: 3
+
+  enregistrement:
+    needs: collecte
+    if: always() && (github.event.inputs.enregistrer || 'oui') == 'oui'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: out-*
+          merge-multiple: true
+          path: out/
+      - name: Ranger les fichiers et pousser
+        run: |
+          DAY=$(TZ=Europe/Paris date +%F)
+          mkdir -p data/latest "data/archive/$DAY"
+          cp out/*.json data/latest/ 2>/dev/null || true
+          cp out/*.json "data/archive/$DAY/" 2>/dev/null || true
+          echo "{\"date\": \"$DAY\", \"genere_le\": \"$(date -u +%FT%TZ)\"}" > data/latest/_date.json
+          # garder 7 jours d'archives
+          for d in data/archive/*/; do
+            n=$(basename "$d")
+            if [[ "$n" < "$(TZ=Europe/Paris date -d '7 days ago' +%F)" ]]; then rm -rf "$d"; fi
+          done
+          git config user.name "veille-emploi-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          git commit -m "Collecte du $DAY" || echo "rien a commiter"
+          git push

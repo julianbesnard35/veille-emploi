@@ -1,0 +1,323 @@
+{
+  "_doc": "Requetes lancees chaque matin par GitHub Actions. Ordre = priorite (LinkedIn limite le nombre de requetes). Modifier ici pour changer ce qui est collecte.",
+  "profil_a": {
+    "linkedin": [
+      [
+        "Canada",
+        "\"AI enablement\" OR \"AI adoption\" OR \"AI deployment\" OR \"AI implementation\""
+      ],
+      [
+        "Canada",
+        "\"AI project manager\" OR \"AI program manager\" OR \"AI product manager\" OR \"AI automation\""
+      ],
+      [
+        "Montreal, Quebec, Canada",
+        "IA OR \"intelligence artificielle\" OR AI chargé de projet OR gestionnaire de projet OR product"
+      ],
+      [
+        "Montreal, Quebec, Canada",
+        "\"customer success\" OR \"implementation manager\" OR \"AI consultant\" OR \"business development\" bilingual"
+      ],
+      [
+        "Toronto, Ontario, Canada",
+        "\"AI enablement\" OR \"AI deployment\" OR \"AI project\" OR \"AI learning\" OR \"AI specialist\""
+      ],
+      [
+        "Ottawa, Ontario, Canada",
+        "AI OR \"artificial intelligence\" project OR enablement OR adoption bilingual"
+      ],
+      [
+        "Vancouver, British Columbia, Canada",
+        "\"AI enablement\" OR \"AI deployment\" OR \"AI project manager\" OR \"AI adoption\""
+      ],
+      [
+        "Quebec City, Quebec, Canada",
+        "IA OR AI projet OR produit OR automatisation"
+      ],
+      [
+        "France",
+        "\"adoption IA\" OR \"déploiement IA\" OR \"AI enablement\" OR \"AI adoption\" OR \"product builder\""
+      ],
+      [
+        "France",
+        "\"chef de projet IA\" OR \"AI project manager\" OR \"chef de projet intelligence artificielle\""
+      ],
+      [
+        "France",
+        "\"product owner\" OR \"product manager\" IA OR AI OR automatisation"
+      ],
+      [
+        "France",
+        "\"consultant IA\" OR \"IA générative\" OR \"automatisation\" no-code OR Make OR Zapier"
+      ],
+      [
+        "France",
+        "\"customer success\" OR \"implementation manager\" OR \"chef de projet déploiement\" SaaS OR IA"
+      ],
+      [
+        "France",
+        "\"chef de projet international\" OR \"international project manager\" OR \"chargé de projets européens\""
+      ],
+      [
+        "France",
+        "italien OR italiano OR \"Italian speaking\" business developer OR \"account manager\" OR \"chef de projet\" OR export"
+      ],
+      [
+        "Lyon, Auvergne-Rhône-Alpes, France",
+        "IA OR AI chef de projet OR \"product owner\" OR consultant OR automatisation"
+      ],
+      [
+        "Toulouse, Occitanie, France",
+        "IA OR AI chef de projet OR \"product owner\" OR consultant OR automatisation"
+      ],
+      [
+        "Bordeaux, Nouvelle-Aquitaine, France",
+        "IA OR AI chef de projet OR \"product owner\" OR consultant OR automatisation"
+      ],
+      [
+        "Nantes, Pays de la Loire, France",
+        "IA OR AI chef de projet OR \"product owner\" OR consultant OR automatisation"
+      ],
+      [
+        "Rennes, Brittany, France",
+        "IA OR AI chef de projet OR \"product owner\" OR consultant OR automatisation"
+      ],
+      [
+        "Lille, Hauts-de-France, France",
+        "IA OR AI chef de projet OR \"product owner\" OR consultant OR automatisation"
+      ],
+      [
+        "Marseille, Provence-Alpes-Côte d'Azur, France",
+        "IA OR AI chef de projet OR \"product owner\" OR consultant OR automatisation"
+      ],
+      [
+        "Montpellier, Occitanie, France",
+        "IA OR AI chef de projet OR \"product owner\" OR consultant OR automatisation"
+      ],
+      [
+        "Strasbourg, Grand Est, France",
+        "IA OR AI chef de projet OR \"product owner\" OR consultant OR automatisation"
+      ],
+      [
+        "Nice, Provence-Alpes-Côte d'Azur, France",
+        "IA OR AI OR italien chef de projet OR \"product owner\" OR consultant"
+      ],
+      [
+        "Grenoble, Auvergne-Rhône-Alpes, France",
+        "IA OR AI chef de projet OR \"product owner\" OR consultant"
+      ],
+      [
+        "Paris, Île-de-France, France",
+        "\"AI enablement\" OR \"adoption IA\" OR \"déploiement IA\" OR \"product builder\""
+      ]
+    ],
+    "hellowork": [
+      "chef de projet IA",
+      "adoption IA",
+      "déploiement IA",
+      "intelligence artificielle",
+      "IA générative",
+      "product owner",
+      "product manager",
+      "automatisation",
+      "no-code",
+      "consultant IA",
+      "customer success",
+      "implementation manager",
+      "chef de projet international",
+      "projets européens",
+      "italien",
+      "business developer",
+      "chef de projet digital",
+      "chef de projet déploiement"
+    ],
+    "apec": [
+      "chef de projet IA",
+      "intelligence artificielle",
+      "IA générative",
+      "product owner",
+      "product manager",
+      "automatisation",
+      "customer success",
+      "chef de projet international",
+      "projets européens",
+      "italien",
+      "business developer",
+      "consultant IA"
+    ],
+    "guichetemplois": [
+      [
+        "intelligence artificielle",
+        "Montréal"
+      ],
+      [
+        "artificial intelligence",
+        "Toronto"
+      ],
+      [
+        "AI",
+        "Ottawa"
+      ],
+      [
+        "AI",
+        "Vancouver"
+      ],
+      [
+        "chargé de projet",
+        "Montréal"
+      ],
+      [
+        "project manager AI",
+        "Canada"
+      ],
+      [
+        "bilingue",
+        "Montréal"
+      ],
+      [
+        "implementation",
+        "Toronto"
+      ],
+      [
+        "automatisation",
+        "Québec"
+      ],
+      [
+        "AI",
+        "Calgary"
+      ],
+      [
+        "project manager",
+        "Moncton"
+      ],
+      [
+        "AI",
+        "Halifax"
+      ]
+    ]
+  },
+  "profil_b": {
+    "linkedin": [
+      [
+        "Dublin, County Dublin, Ireland",
+        "\"project coordinator\" OR \"programme coordinator\" OR \"project officer\" OR \"programme officer\" OR \"programme assistant\""
+      ],
+      [
+        "Ireland",
+        "coordinator OR officer charity OR \"non-profit\" OR NGO OR education OR youth OR schools"
+      ],
+      [
+        "Ireland",
+        "\"volunteer coordinator\" OR \"community engagement\" OR \"education programme\" OR \"youth programme\""
+      ],
+      [
+        "Brussels Region, Belgium",
+        "\"project coordinator\" OR \"programme coordinator\" OR \"project officer\" OR \"programme officer\" OR \"programme assistant\""
+      ],
+      [
+        "Amsterdam, North Holland, Netherlands",
+        "\"project coordinator\" OR \"programme coordinator\" OR \"project officer\" OR \"programme officer\" education OR NGO OR non-profit"
+      ],
+      [
+        "Barcelona, Catalonia, Spain",
+        "\"project coordinator\" OR \"programme coordinator\" OR \"project officer\" OR \"executive assistant\" French"
+      ],
+      [
+        "Madrid, Community of Madrid, Spain",
+        "\"project coordinator\" OR \"programme coordinator\" OR \"project officer\" OR \"executive assistant\" French"
+      ],
+      [
+        "Lisbon, Lisbon, Portugal",
+        "\"project coordinator\" OR \"programme coordinator\" OR \"project officer\" OR \"customer success\" French"
+      ],
+      [
+        "Geneva, Geneva, Switzerland",
+        "\"project coordinator\" OR \"programme coordinator\" OR \"programme officer\" OR \"project assistant\""
+      ],
+      [
+        "Luxembourg",
+        "\"project coordinator\" OR \"programme coordinator\" OR \"project officer\" OR \"executive assistant\""
+      ],
+      [
+        "Montreal, Quebec, Canada",
+        "\"coordonnatrice de programmes\" OR \"chargée de projets\" OR \"project coordinator\" OR \"program coordinator\""
+      ],
+      [
+        "London Area, United Kingdom",
+        "\"project coordinator\" OR \"programme coordinator\" charity OR education \"visa sponsorship\""
+      ],
+      [
+        "France",
+        "\"chargée de projets\" OR \"coordinatrice de programmes\" association OR fondation OR éducation OR jeunesse"
+      ],
+      [
+        "France",
+        "\"mobilité internationale\" OR \"global mobility\" OR \"international mobility\""
+      ],
+      [
+        "France",
+        "\"projets européens\" OR Erasmus OR \"relations internationales\" chargé OR chargée"
+      ],
+      [
+        "France",
+        "\"RH généraliste\" OR \"HR generalist\" OR \"HR coordinator\" OR \"people analytics\" junior"
+      ],
+      [
+        "Europe",
+        "\"global mobility coordinator\" OR \"international mobility\" OR \"mobility specialist\" junior"
+      ],
+      [
+        "Paris, Île-de-France, France",
+        "\"mobilité internationale\" OR \"global mobility\" OR \"coordinatrice de programmes\""
+      ]
+    ],
+    "hellowork": [
+      "chargé de projets association",
+      "coordinateur de programmes",
+      "chargé de projets éducation",
+      "coordinateur jeunesse",
+      "mobilité internationale",
+      "chargé de mobilité internationale",
+      "projets européens",
+      "Erasmus",
+      "relations internationales",
+      "coordinateur pédagogique",
+      "chargé de mission association",
+      "chargé de partenariats",
+      "RH généraliste",
+      "chargé de recrutement",
+      "gestionnaire de formation",
+      "chargé d'événements",
+      "égalité des chances"
+    ],
+    "apec": [
+      "mobilité internationale",
+      "chargé de projets européens",
+      "coordinateur de programmes",
+      "chargé de projets association",
+      "relations internationales",
+      "chargé de partenariats",
+      "RH généraliste",
+      "chargé de mission",
+      "Erasmus"
+    ],
+    "guichetemplois": [
+      [
+        "coordonnateur de programmes",
+        "Montréal"
+      ],
+      [
+        "coordonnatrice de projets",
+        "Montréal"
+      ],
+      [
+        "program coordinator",
+        "Toronto"
+      ],
+      [
+        "agent de projets",
+        "Québec"
+      ]
+    ]
+  }
+}
